@@ -1,0 +1,27 @@
+{
+  "name": "dream-food",
+  "version": "1.0.0",
+  "description": "Сайт здоровой еды",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maripetrova/dream-food.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maripetrova/dream-food/issues"
+  },
+  "homepage": "https://github.com/maripetrova/dream-food#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^4.1.4",
+    "pug": "^3.0.2",
+    "stylus": "^0.55.0"
+  }
+}
