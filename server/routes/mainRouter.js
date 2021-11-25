@@ -9,6 +9,8 @@ data = readFile("./data/fruits.csv")
 data = data.split("\n")
 // console.log(data)
 
+let titleNames = data[0].split(";");
+
 const Product = function (prArr) {
     let names = data[0].split(";");
     names.forEach((name, i) => {
@@ -16,8 +18,6 @@ const Product = function (prArr) {
     })
 }
 
-// let first = new Product(data[1].split(";"));
-// console.log(first)
 const products = [];
 
 for (let i = 1; i < data.length; i++) {
@@ -28,7 +28,8 @@ console.log(products)
 router.get("/", (req,res) => {
     res.render("index", {
         title: "Здоровый образ жизни",
-        products: products
+        products: products,
+        titleNames: titleNames
     })
 })
 
