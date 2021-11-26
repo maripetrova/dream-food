@@ -12,3 +12,15 @@ block body
                 tr
                     each el, j in pr
                         td #{el}
+    form#addProduct(method="POST")
+        input(type="text" name="name" placeholder="Название продукта")
+        select(name="type")
+            option(value="Овощи") Овощи
+            option(value="Фрукты") Фрукты
+            option(value="Ягоды") Ягоды
+        input(type="number" name="b" placeholder="Белки" step=0.1 min=0)
+        input(type="number" name="h" placeholder="Жиры" step=0.1 min=0)
+        input(type="number" name="u" placeholder="Углеводы" step=0.1 min=0)
+        input(type="number" name="kcal" placeholder="Kcal" step=0.1 min=0)
+        button(type="submit") Добавить
+        script(src="/js/addProduct.js")

@@ -9,6 +9,7 @@ app.use(stylus.middleware({
     src: "./public",
     dest: "./public"
 }));
+app.use(express.json());
 
 app.set("views", "./server/views")
 app.set("view engine", "pug")

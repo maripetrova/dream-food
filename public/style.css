@@ -40,3 +40,6 @@ body table td {
 body table tbody {
   color: #21264d;
 }
+body table tbody tr:hover {
+  background-color: rgba(104,120,213,0.2);
+}

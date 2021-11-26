@@ -23,7 +23,12 @@ const products = [];
 for (let i = 1; i < data.length; i++) {
     products.push(new Product(data[i].split(";")))
 }
-console.log(products)
+// console.log(products)
+
+router.post("/add", (req, res) => {
+    console.log(req.body) // Получить тело формы
+    res.send({msg: "done"})
+})
 
 router.get("/", (req,res) => {
     res.render("index", {
