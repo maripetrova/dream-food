@@ -3,7 +3,7 @@ const PORT = process.env.PORT || 3000;
 const serverRouter = require("./server/routes/mainRouter")
 const app = express();
 const stylus = require("stylus")
-
+const dbRouter = require("./server/routes/dbRouter");
 
 app.use(stylus.middleware({
     src: "./public",
@@ -16,6 +16,7 @@ app.set("view engine", "pug")
 
 app.use(express.static("./public"))
 
-app.use("/", serverRouter)
+app.use("/", serverRouter);
+app.use("/api", dbRouter);
 
 app.listen(PORT);

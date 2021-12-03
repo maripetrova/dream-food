@@ -12,7 +12,7 @@ addForm.addEventListener("submit", e => {
         }
     }
     console.log(body);
-    sendForm(body, e.target.method, "/add")
+    sendForm(body, e.target.method, "/api/add")
 })
 
 const sendForm = async (body, method, path) => {
