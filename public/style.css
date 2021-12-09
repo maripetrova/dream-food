@@ -43,3 +43,7 @@ body table tbody {
 body table tbody tr:hover {
   background-color: rgba(104,120,213,0.2);
 }
+body table form {
+  display: flex;
+  flex-direction: column;
+}
